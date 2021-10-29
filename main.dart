@@ -213,6 +213,8 @@ class SocialMediaLocation extends BeamLocation<BeamState> {
       if (state.pathParameters.containsKey("friendId"))
         BeamPage(
             child: SocialMediaPage(
+          sendData: myData.firstWhere((social) =>
+              social["social_media"] == state.pathParameters["socialId"]),
           selectedTab: myData
               .firstWhere(
                 (social) =>
