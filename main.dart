@@ -158,7 +158,7 @@ class _SocialMediaTabbedViewState extends State<SocialMediaTabbedView>
       length: myData.length,
       child: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(74),
+          preferredSize: Size.fromHeight(48),
           child: AppBar(
             bottom: TabBar(
                 indicatorColor: Colors.red,
